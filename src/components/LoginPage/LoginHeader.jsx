@@ -1,4 +1,4 @@
-import logo from "../.././assets/login-frame-27180.svg"
+import logo from "../../../public/login-frame-27180.svg"
 
 export default function Header() {
     return(
