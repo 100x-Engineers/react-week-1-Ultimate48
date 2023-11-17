@@ -22,6 +22,7 @@ function Button({
     const widthStyles = {
       "full": "w-full",
       "auto": "w-auto",
+      [width]: `w-${width}`,
     };
   
     const marginYStyle = `my-${marginY}`;
