@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Text from './Text'
 
 export default function dropDownInput(
     {inputField = "INPUT",
@@ -28,6 +29,7 @@ export default function dropDownInput(
       "lg": "text-lg",
       "xs": "text-xs",
       "xl": "text-xl",
+      [size]: `text-${size}`,
     };
 
     
@@ -42,7 +44,9 @@ export default function dropDownInput(
     <>
     <fieldset className= {classes} {...rest}>
         <legend className={legendClasses}>
-            <div class="px-1">{inputField}</div>
+        <div className="px-1 text-neutral-500">
+            <Text text = {inputField} size="xs" color="neutral-500" font = "medium" />
+        </div>
         </legend>
         <select placeholder={inputField} className={selectClasses}>
             {options.map(option => {

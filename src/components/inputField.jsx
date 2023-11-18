@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Text from './Text'
 
 export default function inputField(
     {inputField = "INPUT", 
@@ -38,13 +39,14 @@ export default function inputField(
 
   const classes = `${base} ${borderClasses} ${sizeStyles[size]}`;
 
-  console.log(classes);
 
   return (
     <>
     <fieldset className= {classes} {...rest}>
         <legend className={legendClasses}>
-            <div className="px-2">{inputField}</div>
+            <div className="px-2">
+                <Text text = {inputField} size="xs" color="neutral-500"/>
+            </div>
         </legend>
         <input type={inputType} placeholder={inputField} className={inputClasses} />
     </fieldset>

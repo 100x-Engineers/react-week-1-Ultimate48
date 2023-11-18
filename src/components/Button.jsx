@@ -11,7 +11,7 @@ function Button({
     ...rest
   }){
   
-    const base = "py-2 px-4 rounded-full shadow-standard backdrop-blur-xl";
+    const base = "py-2 px-6 rounded-full shadow-standard backdrop-blur-xl";
   
     const sizeStyles = {
       "sm": "text-sm",
@@ -37,7 +37,7 @@ function Button({
   
     const isDisabled = disabled ? "bg-neutral-500 cursor-not-allowed" : "";
   
-    const classes = `${base} ${sizeStyles[size]} ${widthStyles[width]}  ${marginXStyle} ${marginYStyle} ${variantStyles[variant]} ${isDisabled}`;
+    const classes = `${base} ${sizeStyles[size]} w-${width}  ${marginXStyle} ${marginYStyle} ${variantStyles[variant]} ${isDisabled}`;
   
     return(
       <button className={classes} {...rest}>
