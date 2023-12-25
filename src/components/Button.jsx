@@ -7,9 +7,7 @@ function Button({
     size = "md",
     width = "auto", 
     marginY = "0", marginX = "0", 
-    disabled = false, 
-    bg_color = "neutral-50",
-    hoverColor = "neutral-50",
+    disabled = false,
     exClasses,
     ...rest
   }){
@@ -34,15 +32,13 @@ function Button({
   
   
     const variantStyles = {
-      "default": `bg-${bg_color} hover:bg-${hoverColor}`,
+      "default": `bg-neutral-50 hover:bg-neutral-50`,
       "outline": "bg-transparent border border-solid border-buttonstroke",
     };
   
     const isDisabled = disabled ? "bg-neutral-500 cursor-not-allowed" : "";
   
     const classes = `${base} ${sizeStyles[size]} w-${width}  ${marginXStyle} ${marginYStyle} ${exClasses} ${variantStyles[variant]} ${isDisabled}`;
-
-    console.log(classes);
   
     return(
       <button className={classes} {...rest}>
