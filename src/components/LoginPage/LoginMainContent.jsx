@@ -14,7 +14,7 @@ export default function MainContent(){
             </section>
             <a href="/src/Login/create-account-step-1.html">
               <Button variant="default" width="full" marginY={10}>
-                <Text text = "Create Account" size="md" color="neutral-1000" />
+                <Text text = "Create Account" size="md" color="neutral-1000" font="bold" />
               </Button>
             </a>
             <div className="flex justify-center items-center gap-1 self-stretch mb-10">
@@ -27,7 +27,7 @@ export default function MainContent(){
             </div>
             <a href="/src/HomeFeed/index.html">
               <Button variant="outline" width="full">
-                <Text text = "Sign in" size="md" color="twitterblue-default" hoverColor="twitterblue-hover" />
+                <Text text = "Sign in" size="md" color="twitterblue-default" hoverColor="twitterblue-hover" font="bold" />
               </Button>
             </a>
           </section>
