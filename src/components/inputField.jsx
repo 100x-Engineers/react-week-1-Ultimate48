@@ -33,7 +33,7 @@ export default function inputField(
   };
 
 
-  const legendClasses = `text-xs font-${font} not-italic leading-normal text-${textColor} group-focus:text-${focusColor}`;
+  const legendClasses = `text-xs font-${font} not-italic leading-normal text-${textColor} group-focus:text-twitterblue-default`;
 
   const inputClasses = `w-full bg-transparent text-${textColor} placeholder:text-${borderColor} focus:outline-none`;
 
