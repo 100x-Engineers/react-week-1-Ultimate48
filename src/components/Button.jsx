@@ -34,6 +34,7 @@ function Button({
     const variantStyles = {
       "default": `bg-neutral-50 hover:bg-neutral-50`,
       "outline": "bg-transparent border border-solid border-buttonstroke",
+      "signup": "bg-twitterblue-default hover:bg-twitterblue-hover",
     };
   
     const isDisabled = disabled ? "bg-neutral-500 cursor-not-allowed" : "";
@@ -49,7 +50,7 @@ function Button({
 
 Button.propTypes = {
     children : PropTypes.node,
-    variant : PropTypes.oneOf(["default", "outline"]).isRequired,
+    variant : PropTypes.oneOf(["default", "outline", "signup"]).isRequired,
     text : PropTypes.string, 
     size : PropTypes.oneOf(["sm", "md", "lg"]), 
     width : PropTypes.oneOf(["full", "auto"]),
