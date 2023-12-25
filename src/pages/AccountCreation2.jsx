@@ -22,7 +22,7 @@ export default function AccountCreation2() {
         </section>
         <section className="flex flex-col justify-end items-center gap-[10px] self-stretch pt-20 px-5 pb-0">
             <a href="/src/Login/create-account-step-3.html" className='w-[334px] h-full'>
-            <Button variant="default" width='full' bg_color='twitterblue-default' hoverColor='twitterblue-hover' exClasses="py-5">
+            <Button variant="signup" width='full' exClasses="py-5">
                 <Text text = "Sign up" size="[16px]" font="bold" color="neutral-50"/>
             </Button>
             </a>
